@@ -5,11 +5,18 @@ public class VideoController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		((MovieTexture)GetComponent<Renderer>().material.mainTexture).Play();
+		Renderer rend = GetComponent<Renderer> ();
+		MovieTexture movie = (MovieTexture)rend.material.mainTexture;
+		movie.Play ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Renderer rend = GetComponent<Renderer> ();
+		MovieTexture movie = (MovieTexture)rend.material.mainTexture;
+		if (!movie.isPlaying) {
+			movie.Stop();
+			Application.LoadLevel("DemoScene");
+		}
 	}
 }

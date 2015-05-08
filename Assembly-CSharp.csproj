@@ -47,8 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Animations\VideoController.cs" />
-     <Compile Include="Assets\Pair.cs" />
-     <Compile Include="Assets\Scene.cs" />
+     <Compile Include="Assets\nextMemory_.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
